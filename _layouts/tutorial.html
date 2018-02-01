@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <title>{{ page.title }}</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="robots" content="INDEX, FOLLOW">
+        <meta name="description" content="Put the description of the tutorial here.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+        <link rel="stylesheet" href="/assets/css/normalize.min.css">
+        <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/assets/css/obe-lite.css">
+        <script src="/assets/js/jquery-1.11.0.min.js"></script>
+        <script src="/assets/js/jquery-ui-1.10.4.custom.js"></script>
+        <script src="/assets/js/jquery.tocify.jd.js"></script>
+        <script src="/assets/js/leftnav.js"></script>
+        <link rel="stylesheet" href="/assets/css/fn.css">
+    </head>
+    <body>
+        <header>
+            <div class="w1024" style="min-height:55px; display:block;"> <a href="https://github.com/fnproject" class="oracle-logo">
+              <img src="/assets/images/fn-logo.png" alt="fn-logo" style="max-width: none;" height="22" width="53"></a>
+            </div>
+        </header>
+        <!--end header-->
+
+        <div id="content">
+
+            <div class="w1024" style="clear:both; position:relative; margin-top:40px;">
+                <div class="navbackwide border-right"><!-- --></div>
+                <div id="shownav" title="Show Navigation" tabindex="0"><span class="fa fa-list"></span></div>
+                <div id="sidebar"><!-- -->
+                    <div class="left-nav-tut"><!-- -->
+                        <div id="hidenavw" title="Hide Navigation" tabindex="0"><span class="fa fa-close"></span></div>
+                        <div  id="navbar" class="left-nav-w"><!-- -->
+                            <div id="toc" class="tocify"><!-- --></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="bookContainer">
+                    <article>
+                        <section>
+                            {{ content }}
+                        </section>
+
+                    </article>
+                </div>
+                <br class="clearfloat">
+            </div>
+        </div>
+        <!--close main-->
+        <!--end content-->
+        <div class="footer-container ">
+            <div style="max-width: 994px; padding:10px 0 0 17px;">
+                <footer class="footer-list">
+                    <ul>
+                        <li> <a href="https://github.com/fnproject/fn" target="_blank">About Fn Project</a> </li>
+                        <li><a href="https://github.com/fnproject/tutorials" target="_blank">Fn Tutorials</a> </li>
+                        <li> <a href="https://github.com/fnproject/fn/blob/master/docs/README.md#for-operators" target="_blank">Operating Fn</a> </li>
+                        <li> <a href="https://github.com/fnproject/flow" target="_blank">Fn Flow</a> </li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
