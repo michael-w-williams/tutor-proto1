@@ -379,4 +379,4 @@ Congratulations!  In this tutorial you've accomplished a lot.  You've
 installed Fn, started up an Fn server, created your first function,
 run it locally, and then deployed it where it can be invoked over HTTP.
 
-**Go:** [Back to Contents](https://github.com/fnproject/tutorials)
+**Go:** [Back to Contents](..)
