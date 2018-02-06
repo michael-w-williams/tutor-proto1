@@ -1,8 +1,9 @@
+<!--
 ---
 layout: tutorial
 title: Introduction to the Java FDK
 ---
-
+-->
 # Introduction to the Java FDK
 
 ## Introduction
