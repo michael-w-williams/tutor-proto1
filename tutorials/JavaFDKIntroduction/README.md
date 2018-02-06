@@ -1,4 +1,3 @@
-
 ---
 layout: tutorial
 title: Introduction to the Java FDK
