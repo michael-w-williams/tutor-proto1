@@ -1,10 +1,8 @@
 
-<!-- hide yaml
 ---
 layout: tutorial
 title: Introduction to the Java FDK
 ---
--->
 
 # Intro to the Java FDK
 
