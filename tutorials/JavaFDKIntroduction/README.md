@@ -1,8 +1,3 @@
----
-layout: tutorial
-title: Introduction to the Java FDK
----
-
 # Intro to the Java FDK
 
 ## Introduction
@@ -456,4 +451,3 @@ FDK.  There's so much more in the FDK than we can cover in a brief
 introduction but we'll go deeper in subsequent tutorials.
 
 **Go:** [Back to Contents](..)
-
