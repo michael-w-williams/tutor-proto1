@@ -3,7 +3,7 @@ layout: tutorial
 title: Introduction to the Java FDK
 ---
 
-# Introduction to the Java FDK
+# Intro to the Java FDK
 
 ## Introduction
 
