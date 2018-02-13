@@ -1,3 +1,7 @@
+---
+layout: tutorial
+---
+
 # Introduction to Fn
 
 Fn is a lightweight Docker-based serverless functions platform you can
