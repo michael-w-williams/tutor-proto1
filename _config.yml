@@ -1,2 +1,8 @@
 theme: minima
 baseurl: /tutor-proto1
+defaults:
+  -
+    scope:
+      path: "" # All files in the project
+    values:
+      layout: "tutorial"
