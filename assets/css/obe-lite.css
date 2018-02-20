@@ -1,5 +1,5 @@
-/* from main.css */
-/* Last update: 10/14/17 */
+/* from obe-lite.css */
+/* Updated: 02/15/18 */
 
 *, *:before, *:after {box-sizing:  border-box;}
 
@@ -11,68 +11,61 @@ html, body {
 
 body {
 	font-family: "Helvetica Neue", "Segoe UI", "Roboto", sans-serif-regular, sans-serif;
-    color: #4f4f4f;
-	font-size: 1em;
+    color: black;
+	font-size: 1rem;
 	font-weight: normal;
 	line-height: 1.5em;
 	-ms-overflow-style: scrollbar;
 }
 
-a, a:link {
-	text-decoration: none;
-	/*color: #0572ce; DL*/
-	color: #069; /*DL*/
-}
-a:hover {
-	text-decoration: underline;
-    color: #145c93;
-}
-a:visited {
-	text-decoration: none;
-color: #145c93; /*DL*/
-}
-
-a:focus {
-	text-decoration: underline;
-}
-
 h1 {
-	font-size: 36px;
+	font-size: 2.4rem;
+    font-weight: normal;
 	line-height: 1.1em;
-	font-weight: normal;
 	color: #D24541;
 	margin: 15px 0 15px 0 !important;
+    padding-left: 1rem;
 }
+
 h2 {
-	font-size: 30px;
+	font-size: 2rem;
+    font-weight: normal;
 	line-height: 1.2em;
-	color: #727272;
-	margin: 15px 0 15px 0;
-	font-weight: normal;
+    color: #145C93;
+    background-color: #E4F0FA;
+	margin: 1rem 0 1rem 1rem;
+    padding: 5px 0px 5px 5px;
 }
+
 h3 {
-	font-size: 24px;
+	font-size: 1.6rem;
 	line-height: 1.2em;
 	font-weight: normal;
-	color: #171717;
-	margin: 15px 0 15px 0;
+    color: #145C93;
+	margin: 1rem 0 1rem 1rem;
 }
+
+
 h4 {
-	font-size: 18px;
+	font-size: 1.2rem;
 	line-height: 1.2em;
 	font-weight: normal;
-	color: #171717;
-	margin: 12px 0 12px 0;
+    color: #145C93;
+	margin: 0.8rem 0 0.8rem 1rem;
 }
+
 h5 {
-	font-size: 15px;
+	font-size: 1rem;
+	font-weight: normal;
 	color: #171717;
-	margin: 12px 0 4px 0;
+	margin: 0.8rem 0 0.4rem 0;
 }
+
 h6 {
-	font-size: 15px;
+	font-size: 1rem;
+	font-weight: normal;
 	color: #171717;
-	margin: 15px 0 4px 0;
+	margin: 1rem 0 0.4rem 0;
 }
 
 h1 img, h2 img, h3 img, h4 img, h5 img {
@@ -82,13 +75,31 @@ h1 img, h2 img, h3 img, h4 img, h5 img {
     float: left; /*required for icons in main category page*/
 }
 
+a, a:link {
+	text-decoration: none;
+	color: #069;
+}
+a:hover {
+	text-decoration: underline;
+    color: #145c93;
+}
+a:visited {
+	text-decoration: none;
+color: #145c93;
+}
+
+a:focus {
+	text-decoration: underline;
+}
+
+
 hr {
 	height: 1px;
 	border: 0;
 	background-color: #d6dfe6;
 	color: #d6dfe6;
-	    margin-top: 8px;
-    margin-bottom: 15px;
+	margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 #content {
@@ -104,6 +115,16 @@ hr {
 	height: 0px;
 	font-size: 1px;
 	line-height: 0px;
+}
+
+.num_circ{
+    margin-left: -45px;
+}
+
+.cleartop{ /* Clears header for page content */
+    clear:both;
+    position:relative;
+    margin-top:60px;
 }
 
 .border {
@@ -122,23 +143,6 @@ hr {
 	border-left: 1px solid #d6dfe6;
 }
 
-/* from respond-768-laptop.css */
-@media only screen and (min-width: 768px) {
-    #bookContainer {
-        height: 100%;
-        margin-left: 220px;
-    }
-    #content {
-        margin-top: 55px;
-    }
-}
-
-/* from respond-1140-laptop.css */
-@media only screen and (min-width: 1140px) {
-    .w1024 {
-        width: 1024px;
-    }
-}
 
 /* from header.css */
 header {
@@ -154,33 +158,6 @@ header {
 	background-color: #f7f7f7;
 	display:block;
 	border-bottom:1px solid #A9BBD0;
-}
-
-.oracle-logo {
-    float: left;
-    margin: 10px;
-}
-
-@media only screen and (min-width: 480px) {
-    header,#header {
-		border-bottom: 1px solid #fff;
-        -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .oracle-logo {
-        margin-left:20px;
-        margin-top:17px;
-    }
-}
-
-@media only screen and (min-width: 1140px) {
-    header, #header {
-		min-height: 55px;
-		min-width: 1024px;
-    }
 }
 
 /* from footer.css */
@@ -199,16 +176,18 @@ header {
 	background: -ms-linear-gradient(top, #eaeaea 0%, #ffffff 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #eaeaea 0%, #ffffff 100%); /* W3C */
 }
+
 .footer-list {
 	float:left;
-	margin: 0;
-	padding: 0;
+    margin: 0;
+	padding: 0.5em;
 }
+
 .footer-list ul {
 	padding: 0;
 	margin: 0;
-	margin-left: -7px;
 }
+
 .footer-list li {
 	display: inline;
 	padding: 0 7px;
@@ -216,9 +195,11 @@ header {
 	border-right: 1px solid #cbcbcb;
 	list-style-type: none;
 }
+
 .footer-list li:last-child {
 	border-right: none;
 }
+
 .footer-list ul li a:link {
 	color:#145c93;
 }
@@ -233,6 +214,7 @@ header {
 	top: 0;
 	bottom: 0;
 }
+
 .navbackwide {
 	width: 40px;
 	position: absolute;
@@ -414,91 +396,33 @@ display: block;
 	margin-left: 190px;
 }
 
-@media only screen and (min-width: 768px) {
-    .navback {
-        width: 160px;
-    }
-    .navbackwide {
-        width: 220px;
-    }
-    #hidenav,#hidenavw  {
-        display: none;
-    }
 
-    .left-nav {
-        display: block;
-    }
-    #sidebar {
-        display: block;
-    }
-}
 
-/* from obe_poc.css */
-/*
+/* from obe_poc.css article tags
  * Version: 4/3/17
- *
- */
-body{
-    font-size: 1em;
-    color: black;
-    line-height: 1.4;
-}
-
-tutorial{
-    background-color: #145C93;
-    color: white;
-    font-weight: 400;
-    margin-left: 10px;
-    padding: 3px 13px 3px 13px;
-}
-
-h1{
-    font-weight: 300;
-    padding-left: 1rem;
-    padding-top: -20px;
-}
-
-/*
-h2{
-    background-color: #E4F0FA;
-    color: #145C93;
-    margin-left: 10px;
-    padding: 5px 0px 5px 5px;
-}
 */
-
-h2{
-    font-weight: 300;
-    background-color: #E4F0FA;
-    color: #145C93;
-    margin-left: 1rem;
-    padding: 5px 0px 5px 5px;
-}
-
-.num_circ{
-    margin-left: -45px;
-}
-
-h3{
-    font-weight: 300;
-    color: #145C93;
-    margin-left: 1rem;
-}
-
-h4{
-    color: #145C93;
-    margin-left: 1rem;
-}
-
 article p{
-    font-size: 1em;
-    line-height: 1.4;
+    font-size: 1rem;
+    line-height: 1.4em;
     margin-left: 1rem;
 }
 
 article blockquote{
     margin-left: 1.2rem;
 }
+
+blockquote > div > div.highlight{
+  background: #f7f7f7 !important;
+}
+
+blockquote > div > div.highlight > pre.highlight{
+  background: #f7f7f7 !important;
+}
+
+blockquote > div > div.highlight > pre.highlight > code{
+  background: #f7f7f7 !important;
+}
+
 
 /* TMM 10/14/17 */
 article > figure, section > figure {
@@ -601,7 +525,6 @@ article ul li figcaption{
     padding-left: 17px;
 }
 
-
 article ol ul{
     font-size: 1em;
     line-height: 1.4;
@@ -621,6 +544,23 @@ article ol ul li::before {
   padding-right: 5px;
 }
 
+.breadcrumb{
+    margin-left: 10px;
+    padding: 3px 13px 3px 13px;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+article ol figure figcaption{
+    margin: 5px 0px 0px -40px;
+}
+
+/* TMM: Added 3/28/17 */
+article ul figure figcaption{
+    margin: 5px 0px 0px -40px;
+}
+
+/* pre and code tags */
 pre {
     -webkit-overflow-scrolling: touch ;
     background-color: #EEF5FC;
@@ -635,10 +575,6 @@ pre {
     word-wrap: normal !important;
 }
 
-.highlighter-rouge{
-    margin-left: 1rem !important;
-}
-
 code, kbd, pre, samp {
     font-family: "Courier New", Courier, monospace;
 }
@@ -647,29 +583,8 @@ pre code {
     font-size: 100%;
 }
 
-.breadcrumb{
-    margin-left: 10px;
-    padding: 3px 13px 3px 13px;
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-.h2_white{
-    background-color: #fff;
-}
-
-.h2_white a:hover{
-    text-decoration: none;
-    border-bottom: dashed 1px #145C93;
-}
-
-article ol figure figcaption{
-    margin: 5px 0px 0px -40px;
-}
-
-/* TMM: Added 3/28/17 */
-article ul figure figcaption{
-    margin: 5px 0px 0px -40px;
+.highlight{ /* Div around pre created by rouge. Indents pre */
+    margin-left: 1rem !important;
 }
 
 
@@ -687,4 +602,59 @@ body.embed > header, body.embed #content > .margin-left, body.embed .footer-cont
 }
 body.embed #content, body.embed #content > .w1024 {
     margin-top: 0 !important;
+}
+
+
+/*********************
+* Media Queries ******
+* from respond-768-laptop.css */
+@media only screen and (min-width: 768px) {
+    #bookContainer {
+        height: 100%;
+        margin-left: 220px;
+    }
+    #content {
+        margin-top: 55px;
+    }
+    .navback {
+        width: 160px;
+    }
+    .navbackwide {
+        width: 220px;
+    }
+    #hidenav,#hidenavw  {
+        display: none;
+    }
+
+    .left-nav {
+        display: block;
+    }
+    #sidebar {
+        display: block;
+    }
+    .footer-list {
+        margin: 0 0 0 220px;
+    }
+}
+
+/* from respond-1140-laptop.css */
+@media only screen and (min-width: 1140px) {
+    .w1024 {
+        width: 1024px;
+    }
+    header, #header {
+		min-height: 55px;
+		min-width: 1024px;
+    }
+    .footer-list {
+        margin: 0 0 0 230px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    header,#header {
+		border-bottom: 1px solid #fff;
+        -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    }
 }
