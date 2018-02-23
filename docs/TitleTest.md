@@ -1,7 +1,7 @@
 ---
 layout: tutorial
 ---
-# Fn Tutorials Guide Test
+### Fn Tutorials Guide Small
 This is a guide to creating a tutorial for the FN project. 
 
 ## Before You Begin
