@@ -1,8 +1,3 @@
----
-layout: tutorial
-title: Fn Tutorials Mock Page
----
-
 # Fn Tutorials
 
 ## Tutorial List

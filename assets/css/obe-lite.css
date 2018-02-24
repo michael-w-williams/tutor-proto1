@@ -571,8 +571,8 @@ pre {
     overflow: auto;
     padding: 1rem;
     display: block;
-    white-space: pre !important;
-    word-wrap: normal !important;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
 }
 
 code, kbd, pre, samp {
