@@ -1,5 +1,6 @@
 # Fn Tutorials
 
 ## Tutorial List
-* [Fn Introduction](Introduction/README.html)
-* [Introduction to Java FDK](JavaFDKIntroduction/README.html) 
+* [Fn Introduction](Introduction/)
+* [Introduction to Java FDK](JavaFDKIntroduction/)
+* [Fn Tutorials Guide](../docs/FnTutorialsGuide.html) 

@@ -1,8 +1,4 @@
----
-layout: tutorial
-title: Fn Tutorials Guide
----
-# {{ page.title }}
+# Fn Tutorials Guide
 This is a guide to creating a tutorial for the FN project. 
 
 ## Before You Begin
@@ -20,24 +16,14 @@ Follow these steps.
 1. Create a directory for your tutorial in the repo.
 1. In the directory create an images directory.
 1. Copy the ![User Input Icon](https://github.com/fnproject/tutorials/raw/master/Introduction/images/userinput.png) [userinput.png](https://github.com/fnproject/tutorials/raw/master/Introduction/images/userinput.png) into that directory.
-1. Create a README.md file using the tutorial template.
+1. Create a README.md file using the tutorial template included at the end of this document.
+1. Customize the titles, sections, and section titles to meet your needs.
 
 ## Formatting
 There are a few markdown formatting styles and techniques we use in our tutorials. The Jekyll theme relies on these to build HTML pages.
 
-### YAML Front Matter
-So that Jekyll can properly format each page two YAML values should be set at the top of any markdown file.
-
-```yaml
----
-layout: tutorial
-title: Put Page title here
----
-```
- 
-Use the "tutorial" Jekyll template to render the HTML page.
-
-The "title" variable is used to set the title of the page in Markdown and in the &lt;head&gt; section of the HTML page.
+### Titles and Sections
+The tutorial title should be an h1 (#). Each section should start with and h2 (##). Try to use action verbs telling the learner what to do in section titles. For example, "Start Fn Server".
 
 ### User Actions and Graphic
 Each time you want the user to do something precede that step with an icon followed by the command with the following format. For example:
@@ -50,20 +36,23 @@ Each time you want the user to do something precede that step with an icon follo
 
 This format combines a blockquote with a code block to provide a unique way to identify a command.
 
-**Note:** Jekyll using the [Rouge Syntax Highlighter](https://github.com/jneen/rouge) for code blocks. See that documentation for languages supported. 
+If you don't want syntax highlighting for your command or are showing an Fn command that won't be syntax highlighted, you can use simple syntax. For example:
+
+![User Input Icon](https://github.com/fnproject/tutorials/raw/master/Introduction/images/userinput.png)
+
+>`fn start`
+
+It save some typing and still looks decent.
+
+**Note:** Jekyll uses the [Rouge Syntax Highlighter](https://github.com/jneen/rouge) for code blocks. See that documentation for languages supported. 
 
 
 ## Tutorial Template
 Here is a template for creating a tutorial. Note the only required elements are a "Title" and at least one "Step Section". The "Before you Begin" and "Learn More" sections are recommended but not required.
 
 ```markdown
----
-layout: tutorial
-title: Tutorial Title 
----
-
-# {{ page.title }} (Required)
-Each tutorial must have a title defined in YAML. Also, the YAML layout value must be set to "tutorial".
+# Tutorial Title (Required)
+Each tutorial must have a title. 
 
 ## Before you Begin (Recommended)
 Provides you the why about this tutorial.  Also covers any  required setup to do the tutorial.
@@ -76,6 +65,9 @@ Spells out any activities or tools that are required before starting the tutoria
 
 ## Section (At least 1 Required)
 You must have at least 1 step/section for a tutorial. You do not need to number the steps.
+
+## Additional Section (Option)
+Create as many sections as you need. Use or don't use Section steps (### and ####) as you need.
 
 ### Section Step (Optional)
 One step in this section.
