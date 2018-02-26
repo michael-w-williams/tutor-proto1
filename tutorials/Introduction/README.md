@@ -1,5 +1,4 @@
 # Introduction to Fn
-
 Fn is a lightweight Docker-based serverless functions platform you can
 run on your laptop, server, or cloud.  In this introductory tutorial
 we'll walk through installing Fn, develop a function using the Go
