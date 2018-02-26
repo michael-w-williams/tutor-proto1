@@ -563,9 +563,6 @@ article ul figure figcaption{
 /* pre and code tags */
 pre {
     -webkit-overflow-scrolling: touch ;
-    background-color: #EEF5FC;
-    border: 1px solid #E4F0FA;
-    border-radius:3px;
     color: #222;
     line-height: 1.615;
     overflow: auto;
@@ -577,10 +574,12 @@ pre {
 
 code, kbd, pre, samp {
     font-family: "Courier New", Courier, monospace;
+    background-color: #f7f7f7;
 }
 
 pre code {
     font-size: 100%;
+    background-color:#F0F8FF;
 }
 
 .highlight{ /* Div around pre created by rouge. Indents pre */
@@ -638,7 +637,8 @@ body.embed #content, body.embed #content > .w1024 {
 }
 
 /* from respond-1140-laptop.css */
-@media only screen and (min-width: 1140px) {
+/* 02/26/18 Changed min to 1024 for better flow */
+@media only screen and (min-width: 1024px) {
     .w1024 {
         width: 1024px;
     }
