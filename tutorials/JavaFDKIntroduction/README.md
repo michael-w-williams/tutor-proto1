@@ -1,6 +1,4 @@
-# Intro to the Java FDK
-
-## Introduction
+# Introduction
 
 This tutorial introduces the
 [Fn Java FDK (Function Development Kit)](https://github.com/fnproject/fdk-java).
@@ -15,7 +13,7 @@ As you make your way through this tutorial, look out for this icon.
 ![](images/userinput.png) Whenever you see it, it's time for you to
 perform an action.
 
-## Prequisites
+## Prerequisites
 
 This tutorial requires you to have both Docker and Fn installed and an
 Fn server running locally.  If you need help with Fn installation you
@@ -24,36 +22,35 @@ can find instructions in the
 
 ## Getting Started
 
-Let's start by creating a new function.  In a terminal type the
-following and note the runtime value is **java8**, not just java.  "java"
-defaults to Java 9 but this lab uses Java 8.
+Let's start by creating a new function.  In a terminal type the following:
 
 ![](images/userinput.png)
->```sh
->mkdir javafn
->cd javafn
->fn init --runtime java
->```
+>`fn init --runtime java javafn`
 
 The output will be:
+
 ```sh
+Creating function at: /javafn
 Runtime: java
 Function boilerplate generated.
 func.yaml created.
 ```
+
+![](images/userinput.png)
+>```sh
+>cd javafn
+>```
 
 The `fn init` command creates an simple function with a bit of boilerplate to get you
 started. The `--runtime` option is used to indicate that the function
 we're going to develop will be written in Java 9, the default version
 as of this writing. A number of other runtimes are also supported.  
 
-If you have the `tree` utility installed
+__If__ you have the `tree` utility installed
 you can see the directory structure that the `init` command has created.
 
 ![](images/userinput.png)
->```sh
->tree
->```
+>`tree`
 
 ```sh
 .
@@ -61,11 +58,11 @@ you can see the directory structure that the `init` command has created.
 ├── pom.xml
 └── src
     ├── main
-    │   └── java
-    │       └── com
-    │           └── example
-    │               └── fn
-    │                   └── HelloFunction.java
+    │   └── java
+    │       └── com
+    │           └── example
+    │               └── fn
+    │                   └── HelloFunction.java
     └── test
         └── java
             └── com
@@ -87,7 +84,6 @@ Take a look at the contents of the generated func.yaml file.
 >```sh
 >cat func.yaml
 >```
-
 
 ```yaml
 version: 0.0.1
@@ -132,9 +128,7 @@ packages being downloaded.  This is also expected the first time you
 run a function and trigger a build.
 
 ![](images/userinput.png)
->```sh
->fn run
->```
+>`fn run`
 
 Here's what the output looks like:
 
@@ -162,7 +156,7 @@ Hello, Bob!
 
 Instead of "Hello, world!" the function has read the input string "Bob" from standard input and returned "Hello, Bob!".
 
-### Exploring the Code
+## Exploring the Code
 
 We've generated, compiled, and run the Java function so let's take a
 look at the code.  You may want to open the code in your favorite IDE or editor.
@@ -252,9 +246,7 @@ will cause Maven to compile and run the updated test class.  If you
 opened the code in an IDE you can run the tests directly from there.
 
 ![](images/userinput.png)
->```sh
->fn build
->```
+>`fn build`
 
 ```sh
 Building image fndemouser/javafn:0.0.1 .......
@@ -298,9 +290,7 @@ data formats like protobuf, avro or xml.
 Let's build the updated function:
 
 ![](images/userinput.png)
->```sh
->fn build
->```
+>`fn build`
 
 returns:
 
@@ -313,9 +303,7 @@ ERROR: error running docker build: exit status 1
 To find out what happened rerun build with the verbose switch:
 
 ![](images/userinput.png)
->```sh
->fn --verbose build
->```
+>`fn --verbose build`
 
 ```sh
 ...
@@ -398,9 +386,7 @@ and expecting a result of
 If you re-run the test via `fn -verbose build` we can see that it now passes:
 
 ![](images/userinput.png)
->```sh
->fn --verbose build
->```
+>`fn --verbose build`
 
 
 ## Deploying your Java Function
@@ -412,9 +398,7 @@ generated image out to a remote Docker repository by using the `--local`
 option.
 
 ![](images/userinput.png)
->```sh
->fn deploy --local --app myapp
->```
+>`fn deploy --local --app myapp`
 
 ```sh
 Deploying javafn to app: myapp at path: /javafn
@@ -450,4 +434,4 @@ Congratulations! You've just completed an introduction to the Fn Java
 FDK.  There's so much more in the FDK than we can cover in a brief
 introduction but we'll go deeper in subsequent tutorials.
 
-**Go:** [Back to Contents](..)
+**Go:** [Back to Contents](../README.md)
